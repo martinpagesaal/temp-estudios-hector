@@ -1,26 +1,67 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html 
-     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-	 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <title>Lista de Pacientes</title>
-	<link href="./html-extra/style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-	<div id='content'>
-		<h1>Lista de Pacientes</h1>
-		<hr />
-		<ul>
-			
-			<li><a href="./Onetti_Hector_Sabino/index.html">Onetti Hector Sabino</a>, </li>
-			
-		</ul>
-		<hr />
-		<div id='footer'>
-			Hecho con <a href='https://www.osirix-viewer.com' target='_blank'>OsiriX</a><br />Requiere <a href='http://www.apple.com/quicktime/' target='_blank'>QuickTime</a> para mostrar algunas de las imágenes.
-		</div>
-	</div>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccione el Estudio</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+        h1 {
+            font-size: 2rem;
+            color: #444;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .button:active {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Seleccione el Estudio</h1>
+    <a href="#" id="estudioViejo" class="button">Estudio Viejo</a>
+    <a href="#" id="estudioNuevo" class="button">Estudio Nuevo</a>
+</div>
+
+<script>
+    document.getElementById("estudioViejo").addEventListener("click", function(event) {
+        event.preventDefault();
+        window.location.href = "./estudio-viejo/index.html";
+    });
+
+    document.getElementById("estudioNuevo").addEventListener("click", function(event) {
+        event.preventDefault();
+        window.location.href = "./estudio-nuevo/index.html";
+    });
+</script>
+</body>
 </html>

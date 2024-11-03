@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="OsiriXCDViewer">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/OsiriX Launcher.app/Contents/Resources/OsiriXCDViewer.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

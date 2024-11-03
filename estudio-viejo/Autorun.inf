@@ -1,0 +1,5 @@
+[Autorun]
+Open=WindowsViewer.exe
+Action=Open Images
+Icon=WindowsViewer.exe
+Label=WindowsViewer
